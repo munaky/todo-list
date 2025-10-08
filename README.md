@@ -64,5 +64,3 @@ If you prefer using Docker, make sure Docker and Docker Compose are installed.
 2. **Access the project**
 
    Open your browser and go to: [http://localhost:8000](http://localhost:8000)
-
-```
