@@ -8,7 +8,7 @@ This backend technical test solution, built with Laravel.
    ```bash
    git clone https://github.com/munaky/todo-list
    cd todo-list
-```
+    ```
 
 2. **Copy the environment file**
 
