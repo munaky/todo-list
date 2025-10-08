@@ -73,5 +73,6 @@ For API testing, you can import the provided Postman collection:
 
 1. Open Postman.
 2. Import the `postman_collection.json` file.
-3. Use the requests in the collection to test the API endpoints.
+3. Set the `base_url` variable in Postman to match your environment
+4. Use the requests in the collection to test the API endpoints.
 
