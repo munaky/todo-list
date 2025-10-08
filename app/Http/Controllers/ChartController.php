@@ -41,7 +41,12 @@ class ChartController extends Controller
 
     private function getStatusSummary()
     {
-        $summary = [];
+        $summary = [
+            'pending' => 0,
+            'open' => 0,
+            'in_progress' => 0,
+            'completed' => 0
+        ];
         $result = Todo::select('status', DB::raw('count(*) as total'))
             ->groupBy('status')
             ->get();
@@ -57,7 +62,11 @@ class ChartController extends Controller
 
     private function getPrioritySummary()
     {
-        $summary = [];
+        $summary = [
+            'low' => 0,
+            'medium' => 0,
+            'high' => 0,
+        ];
         $result = Todo::select('priority', DB::raw('count(*) as total'))
             ->groupBy('priority')
             ->get();

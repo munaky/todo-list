@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "8b2f7187-0299-4f87-bc61-280175c29920",
+		"name": "todo-list",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38784263"
+	},
+	"item": [
+		{
+			"name": "create todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"test todo\",\n    \"assignee\": \"tester\",\n    \"due_date\": \"2025-10-09\",\n    \"time_tracked\": 21,\n    \"status\": \"completed\",\n    \"priority\": \"high\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/todos",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "export excel",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"lalilu\",\n    \"assignee\": \"\",\n    \"due_date\": \"2025-10-07\",\n    \"time_tracked\": 0,\n    \"status\": \"pending\",\n    \"priority\": \"low\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/todos/export",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"todos",
+						"export"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "t",
+							"disabled": true
+						},
+						{
+							"key": "assignee",
+							"value": "tester",
+							"disabled": true
+						},
+						{
+							"key": "start",
+							"value": "2025-10-09",
+							"disabled": true
+						},
+						{
+							"key": "end",
+							"value": "2025-10-10",
+							"disabled": true
+						},
+						{
+							"key": "min",
+							"value": "6",
+							"disabled": true
+						},
+						{
+							"key": "max",
+							"value": "8",
+							"disabled": true
+						},
+						{
+							"key": "status",
+							"value": "completed,in_progress",
+							"disabled": true
+						},
+						{
+							"key": "priority",
+							"value": "high,medium",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get chart: status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/chart?type=status",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"chart"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "status"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": ""
+		}
+	]
+}
