@@ -95,7 +95,7 @@ class ChartController extends Controller
         foreach ($result as $item) {
             $summary[$item->assignee]['total_todos'] = $item->total;
             $summary[$item->assignee]['total_pending_todos'] = $item->total_pending_todos;
-            $summary[$item->assignee]['total_timetracked_complete_todos'] = $item->total_timetracked_completed_todos;
+            $summary[$item->assignee]['total_timetracked_complete_todos'] = (int)$item->total_timetracked_completed_todos;
         }
 
         return [
