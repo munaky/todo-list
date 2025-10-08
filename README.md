@@ -64,3 +64,15 @@ If you prefer using Docker, make sure Docker and Docker Compose are installed.
 2. **Access the project**
 
    Open your browser and go to: [http://localhost:8000](http://localhost:8000)
+
+---
+
+## Testing with Postman
+
+For API testing, you can import the provided Postman collection:
+
+1. Open Postman.
+2. Import the `postman_collection.json` file.
+3. Use the requests in the collection to test the API endpoints.
+
+```
