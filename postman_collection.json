@@ -2,8 +2,9 @@
 	"info": {
 		"_postman_id": "8b2f7187-0299-4f87-bc61-280175c29920",
 		"name": "todo-list",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "38784263"
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "38784263",
+		"_collection_link": "https://www.postman.com/futsalgo/workspace/jobs/collection/38784263-8b2f7187-0299-4f87-bc61-280175c29920?action=share&source=collection_link&creator=38784263"
 	},
 	"item": [
 		{
@@ -20,16 +21,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "{{base_url}}/api/todos",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"api",
-						"todos"
-					]
-				}
+				"url": "{{base_url}}/api/todos"
 			},
 			"response": []
 		},
@@ -119,6 +111,54 @@
 						{
 							"key": "type",
 							"value": "status"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get chart: priority",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/chart?type=priority",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"chart"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "priority"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get chart: assignee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/chart?type=assignee",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"chart"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "assignee"
 						}
 					]
 				}
