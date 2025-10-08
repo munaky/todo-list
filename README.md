@@ -52,7 +52,7 @@ This backend technical test solution, built with Laravel.
    php artisan serve
    ```
 
-   Access the project at: [http://localhost:8000](http://localhost:8000)
+   The server is now running, and you can test the API endpoints using Postman.
 
 ---
 
@@ -68,7 +68,7 @@ If you prefer using Docker, make sure Docker and Docker Compose are installed.
 
 2. **Access the project**
 
-   Open your browser and go to: [http://localhost:8000](http://localhost:8000)
+   The server is now running, and you can test the API endpoints using Postman.
 
 ---
 
