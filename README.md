@@ -41,7 +41,12 @@ This backend technical test solution, built with Laravel.
    php artisan key:generate
    ```
 
-6. **Run the development server**
+6. **Run database migrations**
+    ```bash
+   php artisan migrate
+   ```
+
+7. **Run the development server**
 
    ```bash
    php artisan serve
