@@ -68,7 +68,8 @@ If you prefer using Docker, make sure Docker and Docker Compose are installed.
 
 2. **Access the project**
 
-   The server is now running, and you can test the API endpoints using Postman.
+   The application is running on **localhost** at port **8000**. You can use this URL as the `base_url` in Postman to test all API endpoints:
+   http://localhost:8000
 
 ---
 
