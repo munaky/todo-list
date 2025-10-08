@@ -75,4 +75,3 @@ For API testing, you can import the provided Postman collection:
 2. Import the `postman_collection.json` file.
 3. Use the requests in the collection to test the API endpoints.
 
-```
