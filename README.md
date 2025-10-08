@@ -1,8 +1,6 @@
 # Technical Test Backend: Todo List API
 This backend technical test solution, built with Laravel.
 
-
-````markdown
 ## Local Installation
 
 1. **Clone the repository**
@@ -10,7 +8,7 @@ This backend technical test solution, built with Laravel.
    ```bash
    git clone https://github.com/munaky/todo-list
    cd todo-list
-````
+```
 
 2. **Copy the environment file**
 
